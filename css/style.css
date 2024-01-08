@@ -1,0 +1,208 @@
+/* Contents of style.css */
+* {box-sizing:border-box}
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.title {
+    display: flex;
+    top: 0; /* Align to the top of the page */
+    width: 100%; /* Full width */
+    background-color: #3969c4; /* Example background color */
+    color: white; /* Example text color */
+    text-align: center;
+    padding: 10px 0; /* Example padding */
+    z-index: 1000; /* Ensures the header stays above other content */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the videos horizontally */
+    align-items: center; /* Align the videos vertically */
+    gap: 30px; /* Space between the videos */
+    text-align: center; /* Center align the content */
+}
+
+/* Style for each video */
+.video {
+    flex: 1; /* Each video takes equal space */
+    max-width: 45%; /* Maximum width for each video */
+}
+
+.video-title {
+    font-size: 20px; /* Title font size */
+    color: #333; /* Title font color */
+    margin-bottom: 10px; /* Space between title and video */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.footer {
+    margin-top: auto; /* Automatically sizes the top margin */
+    background-color: #2f3d3d; /* Example background color */
+    color: white; /* Example text color */
+    text-align: center;
+    padding: 10px 0; /* Example padding */
+}
+
+/* style the button */
+
+/* Basic button styling */
+.button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Top/bottom and left/right padding */
+    text-align: center; /* Center the text inside */
+    text-decoration: none; /* No underline on text */
+    display: inline-block; /* Allows setting dimensions */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer/hand icon when mouse over */
+    border-radius: 8px; /* Rounded corners */
+    transition-duration: 0.4s; /* Transition effect duration */
+}
+
+/* Button hover effects */
+.button:hover {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: 2px solid #4CAF50; /* Green border */
+}
+
+/* Additional shapes and styles */
+.button-round {
+    border-radius: 50%; /* Circular button */
+    padding: 10px 20px; /* Adjust padding for circular shape */
+}
+
+.button-outline {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black; /* Black border */
+}
+
+/* dashed line and people section */
+
+/* Style for the dashed line */
+.dashed-line {
+    border-bottom: 10px dashed #000000; /* Black dashed line */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Style for the "Our People" section */
+.our-people-section {
+    background-color: #cbb8dd; /* Light blue background */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for spacing */
+    font-size: 24px; /* Font size for the title */
+    color: #000000; /* Text color */
+    width: 100%;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgb(217, 221, 197);
+    border-width: 8px;
+}
+
+.video {
+    margin-top: auto;
+    border: 3px solid rgb(217, 221, 197); /* Black border */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
